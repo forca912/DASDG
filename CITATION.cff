@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the versioned DASDG software release. The DOI and repository URL will be added after public publication."
+message: "Please cite the versioned DASDG software release. The archive DOI will be added after Zenodo publication."
 title: "DASDG: Traffic-flow forecasting under persistent sensor missingness"
 type: software
 authors:
@@ -9,4 +9,4 @@ version: "1.0.0"
 date-released: "2026-08-23"
 license: "MIT"
 doi: ""
-url: ""
+url: "https://github.com/forca912/DASDG"

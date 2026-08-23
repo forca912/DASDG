@@ -7,8 +7,8 @@ mask, normalized missing duration, a shared GRU encoder, a Top-k sparse dynamic
 graph, gated graph fusion, and multi-step residual prediction.
 
 This directory is the v1.0.0 release candidate. It is distributed under the MIT
-License. The repository URL and archive DOI will be added to `CITATION.cff` and
-this README after the public repository and versioned archive are created.
+License. The public repository is https://github.com/forca912/DASDG. The archive
+DOI will be added after Zenodo publication.
 
 ## Verified study scope
 
@@ -136,5 +136,5 @@ python src/dasdg/run_v16b_primary.py \
 ## License and citation
 
 The source code is released under the MIT License; see `LICENSE`. Citation
-metadata are provided in `CITATION.cff`. The repository URL and DOI are left
-empty in this local release candidate and must be filled after publication.
+metadata are provided in `CITATION.cff`. The repository URL is recorded there;
+the archive DOI will be added after publication.
