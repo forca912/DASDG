@@ -1,4 +1,4 @@
-# DASDG v1.0.0 release candidate
+# DASDG v1.0.1
 
 DASDG is executable research software for traffic-flow forecasting under
 persistent sensor missingness. The locked manuscript variant is
@@ -6,9 +6,10 @@ persistent sensor missingness. The locked manuscript variant is
 mask, normalized missing duration, a shared GRU encoder, a Top-k sparse dynamic
 graph, gated graph fusion, and multi-step residual prediction.
 
-This directory is the v1.0.0 release candidate. It is distributed under the MIT
-License. The public repository is https://github.com/forca912/DASDG. The archive
-DOI will be added after Zenodo publication.
+This is the v1.0.1 archival release. It is distributed under the MIT License.
+The public repository is https://github.com/forca912/DASDG. The version DOI is
+https://doi.org/10.5281/zenodo.22070218, and the concept DOI covering all
+versions is https://doi.org/10.5281/zenodo.22070217.
 
 ## Verified study scope
 
@@ -136,5 +137,6 @@ python src/dasdg/run_v16b_primary.py \
 ## License and citation
 
 The source code is released under the MIT License; see `LICENSE`. Citation
-metadata are provided in `CITATION.cff`. The repository URL is recorded there;
-the archive DOI will be added after publication.
+metadata are provided in `CITATION.cff`. Cite version 1.0.1 with DOI
+https://doi.org/10.5281/zenodo.22070218. The concept DOI for all versions is
+https://doi.org/10.5281/zenodo.22070217.
