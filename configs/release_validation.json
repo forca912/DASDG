@@ -1,0 +1,15 @@
+{
+  "software_version": "1.0.0",
+  "locked_variant": "graph_no_reliability_channel",
+  "datasets": ["PEMS04", "PEMS08"],
+  "seeds": [20260808, 20260809, 20260810],
+  "global_missing_rate": 0.1,
+  "affected_node_fraction": 0.4,
+  "block_length": 12,
+  "main_runs": 6,
+  "baseline_models": ["graph_wavenet_adaptive", "gru_mask_duration"],
+  "baseline_runs": 12,
+  "horizons": ["3", "6", "9", "12", "all"],
+  "relative_metric_tolerance": 0.05,
+  "parameter_count_must_match": true
+}

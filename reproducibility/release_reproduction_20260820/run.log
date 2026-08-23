@@ -1,0 +1,19 @@
+[1/6] dataset=PEMS04 variant=graph_no_reliability_channel seed=20260808 started
+$ /root/miniconda3/bin/python /root/autodl-tmp/DASDG_v1.0.0/src/dasdg/train_fdr_stgnn.py --dataset PEMS04 --processed-dir data/processed --mask-file data/masks_v2/PEMS04/persistent_rate_controlled/seed20260808_global0.1_nodes0.4_block12.npz --variant graph_no_reliability_channel --epochs 150 --patience 25 --num-workers 0 --latency-repetitions 50 --seed 20260808 --output-dir outputs/dasdg_repro_v1_0/global0.1/block12
+[1/6] dataset=PEMS04 variant=graph_no_reliability_channel seed=20260808 finished elapsed=638.7s
+[2/6] dataset=PEMS08 variant=graph_no_reliability_channel seed=20260808 started
+$ /root/miniconda3/bin/python /root/autodl-tmp/DASDG_v1.0.0/src/dasdg/train_fdr_stgnn.py --dataset PEMS08 --processed-dir data/processed --mask-file data/masks_v2/PEMS08/persistent_rate_controlled/seed20260808_global0.1_nodes0.4_block12.npz --variant graph_no_reliability_channel --epochs 150 --patience 25 --num-workers 0 --latency-repetitions 50 --seed 20260808 --output-dir outputs/dasdg_repro_v1_0/global0.1/block12
+[2/6] dataset=PEMS08 variant=graph_no_reliability_channel seed=20260808 finished elapsed=624.9s
+[3/6] dataset=PEMS04 variant=graph_no_reliability_channel seed=20260809 started
+$ /root/miniconda3/bin/python /root/autodl-tmp/DASDG_v1.0.0/src/dasdg/train_fdr_stgnn.py --dataset PEMS04 --processed-dir data/processed --mask-file data/masks_v2/PEMS04/persistent_rate_controlled/seed20260809_global0.1_nodes0.4_block12.npz --variant graph_no_reliability_channel --epochs 150 --patience 25 --num-workers 0 --latency-repetitions 50 --seed 20260809 --output-dir outputs/dasdg_repro_v1_0/global0.1/block12
+[3/6] dataset=PEMS04 variant=graph_no_reliability_channel seed=20260809 finished elapsed=589.9s
+[4/6] dataset=PEMS08 variant=graph_no_reliability_channel seed=20260809 started
+$ /root/miniconda3/bin/python /root/autodl-tmp/DASDG_v1.0.0/src/dasdg/train_fdr_stgnn.py --dataset PEMS08 --processed-dir data/processed --mask-file data/masks_v2/PEMS08/persistent_rate_controlled/seed20260809_global0.1_nodes0.4_block12.npz --variant graph_no_reliability_channel --epochs 150 --patience 25 --num-workers 0 --latency-repetitions 50 --seed 20260809 --output-dir outputs/dasdg_repro_v1_0/global0.1/block12
+[4/6] dataset=PEMS08 variant=graph_no_reliability_channel seed=20260809 finished elapsed=771.7s
+[5/6] dataset=PEMS04 variant=graph_no_reliability_channel seed=20260810 started
+$ /root/miniconda3/bin/python /root/autodl-tmp/DASDG_v1.0.0/src/dasdg/train_fdr_stgnn.py --dataset PEMS04 --processed-dir data/processed --mask-file data/masks_v2/PEMS04/persistent_rate_controlled/seed20260810_global0.1_nodes0.4_block12.npz --variant graph_no_reliability_channel --epochs 150 --patience 25 --num-workers 0 --latency-repetitions 50 --seed 20260810 --output-dir outputs/dasdg_repro_v1_0/global0.1/block12
+[5/6] dataset=PEMS04 variant=graph_no_reliability_channel seed=20260810 finished elapsed=786.9s
+[6/6] dataset=PEMS08 variant=graph_no_reliability_channel seed=20260810 started
+$ /root/miniconda3/bin/python /root/autodl-tmp/DASDG_v1.0.0/src/dasdg/train_fdr_stgnn.py --dataset PEMS08 --processed-dir data/processed --mask-file data/masks_v2/PEMS08/persistent_rate_controlled/seed20260810_global0.1_nodes0.4_block12.npz --variant graph_no_reliability_channel --epochs 150 --patience 25 --num-workers 0 --latency-repetitions 50 --seed 20260810 --output-dir outputs/dasdg_repro_v1_0/global0.1/block12
+[6/6] dataset=PEMS08 variant=graph_no_reliability_channel seed=20260810 finished elapsed=752.3s
+DASDG_REPRODUCTION_COMPLETE learning_rows=6
