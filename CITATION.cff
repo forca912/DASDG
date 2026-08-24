@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Li"
     given-names: "Zhuorui"
-version: "1.0.1"
-date-released: "2026-08-23"
+version: "1.0.2"
+date-released: "2026-08-24"
 license: "MIT"
-doi: "10.5281/zenodo.22070218"
+doi: "10.5281/zenodo.22070217"
 url: "https://github.com/forca912/DASDG"
