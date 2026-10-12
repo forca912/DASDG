@@ -1,0 +1,18 @@
+DASDG 1.1.0
+
+Adds the unified dasdg.api and dasdg train/predict/evidence/status command entry.
+Includes configurable complete-label NPZ training and historical-only prediction.
+Includes epoch-boundary optimizer/scheduler/RNG/history/best-weight recovery,
+changed-identity rejection, overwrite protection and concurrent-output locking.
+Preserves the R1 common protocol, ablations, missingness robustness and PEMS03
+configurations alongside the frozen formal DGCRN-MD workflow.
+Adds pinned external-source verification and preserves the DGCRN non-vendoring
+distribution boundary with the unresolved upstream licence notices recorded.
+Adds an executable synthetic reuse example, installation checks, and auditable
+CPU/GPU short acceptance evidence. These checks do not establish new accuracy.
+
+From the accepted 1.1.0rc1 candidate to 1.1.0: the model, training and prediction
+runtime is unchanged. Version/status/packaging metadata, documentation and
+provenance records are updated. The release identity is installed and checked
+separately; the recorded GPU short acceptance was run on the accepted candidate.
+Previous v1.0.2 documents/configurations/results are preserved under archival/.

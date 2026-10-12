@@ -1,0 +1,9 @@
+{
+  "source": "dasdg_revision_r1_robustness_fix3_pems03_v1",
+  "changes": "models.py: two imports made package-relative; model operators unchanged",
+  "upstream_sha256": {
+    "models.py": "e73f28893f75d1ff82fad02d2d998c3bf1a3813a39102808edcb4b8cbfa37a58",
+    "vendor/train_fdr_stgnn.py": "4dcb18c226f94783a28ad5e791847d99a5bcd2d27f16ef55d913e184f930a3e8",
+    "vendor/train_v16b_external.py": "e0e9a7ea06d3ca534c2c064bcd1253afe57d76d5defbcbffa29a5442aea60ecc"
+  }
+}

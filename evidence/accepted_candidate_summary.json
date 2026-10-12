@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "software_version_tested": "1.1.0rc1",
+  "release_version": "1.1.0",
+  "GPU_environment": {
+    "python": "3.12.3",
+    "torch": "2.3.0+cu121",
+    "numpy": "1.26.4",
+    "cuda_runtime": "12.1",
+    "distribution_version": "1.1.0rc1",
+    "torch_dependency_install": "reused_existing_runtime_not_from_zero",
+    "gpu_name": "NVIDIA GeForce RTX 4090 D",
+    "deterministic_algorithms": true,
+    "tf32_enabled": false,
+    "cublas_workspace_config": ":4096:8"
+  },
+  "server_CPU_checks": 20,
+  "server_unified_GPU_checks": 17,
+  "candidate_archive_sha256": "d11b159cf0f1e43cdab91f28472a406fff09c26efe61ca74c304432e4649b45b",
+  "returned_results_archive_sha256": "ba00c26699f4adab4039fd874e70c3c6c2c69c031b1144b09ee08a57b8090d86",
+  "state_equality": {
+    "comparison": "exact_all_keys_recursively",
+    "model_optimizer_scheduler_RNG_history_best_weights": true,
+    "saved_device_tags": [
+      "cpu",
+      "cuda:0"
+    ],
+    "best_and_last_checked": true,
+    "scope": "returned_same_environment_continuous_vs_epoch_boundary_resume"
+  },
+  "prediction_reload": {
+    "saved_GPU_and_CLI_exact": true,
+    "local_CPU_resume_predictions_exact": true,
+    "local_CPU_vs_saved_GPU_max_abs_difference": 0.0,
+    "cross_runtime_tolerance": {
+      "rtol": 1e-05,
+      "atol": 1e-05
+    },
+    "cross_hardware_exact_claim": false
+  },
+  "scope": "synthetic_software_acceptance_only",
+  "limits": [
+    "same_environment epoch-boundary resume, not across arbitrary environments",
+    "existing torch/numpy runtime reused; not fresh full-stack installation",
+    "no real nontraffic generalization performance evidence",
+    "complete target labels required",
+    "DGCRN upstream license notices remain inconsistent"
+  ],
+  "external_DGCRN_acceptance": {
+    "server_operator_tested": false,
+    "local_CPU_operator_status": "PASS",
+    "formal_GPU_benchmark_evidence": "separately_audited_previous_six_jobs_not_rerun"
+  }
+}

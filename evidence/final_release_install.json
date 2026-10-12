@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "version_tested": "1.1.0",
+  "core_checks": 20,
+  "integration_checks": 10,
+  "environment": {
+    "python": "3.10.5",
+    "torch": "2.12.0+cpu",
+    "numpy": "2.2.6"
+  },
+  "installation": "independent_venv_wheel_install_reusing_existing_dependencies",
+  "actual_model_training": "CPU_synthetic_fixture",
+  "GPU_training": "not_repeated_on_final_version; see accepted_candidate_summary.json and runtime bridge",
+  "documented_example": "executed_outside_source_tree",
+  "archive_entrypoints": "import_and_help_passed",
+  "external_compatibility": "verified_against_pinned_local_upstream",
+  "scope": "software_acceptance_not_new_benchmark_results"
+}

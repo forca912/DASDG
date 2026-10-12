@@ -1,0 +1,463 @@
+{
+  "release": "1.1.0",
+  "state": "release_source_prepared",
+  "records": [
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "analyze_v16b_primary.py",
+      "bundled_path": "src/dasdg/analyze_v16b_primary.py",
+      "sha256": "1df78f16bca8fb44ee4b97ff1a8ee0b74c2060e2bd78c6eb952254f9b726751e",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "generate_rate_controlled_masks.py",
+      "bundled_path": "src/dasdg/generate_rate_controlled_masks.py",
+      "sha256": "f5330e66946617fbb79810e396736fe3883556760ad01c577a3523e69a38bf9e",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "preflight_v16b.py",
+      "bundled_path": "src/dasdg/preflight_v16b.py",
+      "sha256": "ad34f81ad5cfed9f9aed9b7f36770a03e4c350eeb6e7f4cbbd1178f924342277",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "prepare_data.py",
+      "bundled_path": "src/dasdg/prepare_data.py",
+      "sha256": "7944bd85ef83203b019a2504596cd792ede3ebb9b5b6a27de324f527a2320b3c",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "run_dasdg_reproduction.py",
+      "bundled_path": "src/dasdg/run_dasdg_reproduction.py",
+      "sha256": "1e5f619001c20f1ebd4a871dca7a836988154c70d39386ddb693ff60a83290c3",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "run_naive_single.py",
+      "bundled_path": "src/dasdg/run_naive_single.py",
+      "sha256": "bb2d793f83fff482f6378c4b30137af0483983b608c57a3314feab6462e74fe3",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "run_v15_confirm.py",
+      "bundled_path": "src/dasdg/run_v15_confirm.py",
+      "sha256": "cdcf61e4ff2109c3ca40a05f4531a6420b01ebf45a73a8548b749dbf346f42bc",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "run_v16b_primary.py",
+      "bundled_path": "src/dasdg/run_v16b_primary.py",
+      "sha256": "553a73bc683c4695191c09608f08cdddaea24e48fabe3e2fef735c3b1f4f65a2",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "setup_v16b_data.py",
+      "bundled_path": "src/dasdg/setup_v16b_data.py",
+      "sha256": "ecc3d2604c623abb83e6f80e0db544e7648d889ad16052044c21cab7ae136a8e",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "train_fdr_stgnn.py",
+      "bundled_path": "src/dasdg/train_fdr_stgnn.py",
+      "sha256": "4dcb18c226f94783a28ad5e791847d99a5bcd2d27f16ef55d913e184f930a3e8",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "archive_v1.0.2",
+      "origin_relative_path": "train_v16b_external.py",
+      "bundled_path": "src/dasdg/train_v16b_external.py",
+      "sha256": "e0e9a7ea06d3ca534c2c064bcd1253afe57d76d5defbcbffa29a5442aea60ecc",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "__init__.py",
+      "bundled_path": "src/dasdg_reuse/__init__.py",
+      "sha256": "8ee5405602340cca2648b6890edf46e3ed4592c47532618925994316e00cc1ee",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "__main__.py",
+      "bundled_path": "src/dasdg_reuse/__main__.py",
+      "sha256": "fbaaacf3d054191d4a01903939440c37972b94943dc0e826c7d3a72bba85732a",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "_engine/__init__.py",
+      "bundled_path": "src/dasdg_reuse/_engine/__init__.py",
+      "sha256": "d08b07cab85df49bdf95bb23bd6e72ae48436f902c358dc19081f1296ed8a3c3",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "_engine/models.py",
+      "bundled_path": "src/dasdg_reuse/_engine/models.py",
+      "sha256": "4c0e6f9d7934edb8329cca5e3c030a1ce2a5d85f84432bf1bdadd61831d50e67",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "_engine/vendor/__init__.py",
+      "bundled_path": "src/dasdg_reuse/_engine/vendor/__init__.py",
+      "sha256": "48f9b2cc0ab162f9fb827145ee4fb37385b68a8cb3d39d5a5e8c37fcf250612b",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "_engine/vendor/train_fdr_stgnn.py",
+      "bundled_path": "src/dasdg_reuse/_engine/vendor/train_fdr_stgnn.py",
+      "sha256": "714d28e941d02e0998a3cc3d8c233ce78b76d6fd042688d43d11c18754b111ea",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "_engine/vendor/train_v16b_external.py",
+      "bundled_path": "src/dasdg_reuse/_engine/vendor/train_v16b_external.py",
+      "sha256": "108cb5f76c6695814b6c7268a35276695dce01d5cac8096034a945710667cb58",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "audited_reuse_rc1",
+      "origin_relative_path": "api.py",
+      "bundled_path": "src/dasdg_reuse/api.py",
+      "sha256": "b59f1e3540e0e7dcfacebd9b6b0033f0da22b53644c64152d6749fe2bff09e42",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "evidence_tools_v0.3.0",
+      "origin_relative_path": "__init__.py",
+      "bundled_path": "src/dasdg_revision_tools/__init__.py",
+      "sha256": "51e9fe677527ca3e3ccc341b9b11d04e0671c83407a10e609cad1bb5010c5c99",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "evidence_tools_v0.3.0",
+      "origin_relative_path": "__main__.py",
+      "bundled_path": "src/dasdg_revision_tools/__main__.py",
+      "sha256": "b40bad137fb5d93399a156c3f1a6833869b53794952c3d090230e8c0f4dc72b6",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "evidence_tools_v0.3.0",
+      "origin_relative_path": "contract.py",
+      "bundled_path": "src/dasdg_revision_tools/contract.py",
+      "sha256": "c931ad1e4adbf20cf83558f43914db730864e634fce4b26844b8b4787a641faa",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "evidence_tools_v0.3.0",
+      "origin_relative_path": "engine_registry.json",
+      "bundled_path": "src/dasdg_revision_tools/engine_registry.json",
+      "sha256": "9251a0c4cc2ae8941b27d496e889ee52fcad36e4ef11b07a68f99eadfe2c6029",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "evidence_tools_v0.3.0",
+      "origin_relative_path": "evidence.py",
+      "bundled_path": "src/dasdg_revision_tools/evidence.py",
+      "sha256": "d7795d1b39739ec340aa6c946bf3ccea3f077d355d2e213b4275ae96d03d6948",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "configs/pattern_compare.json",
+      "bundled_path": "frozen/persistent/configs/pattern_compare.json",
+      "sha256": "1266aff80afb9ed45102a7e87ec22c95362a5556b846800c2fa78697ed458399",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "configs/pems03_generalization.json",
+      "bundled_path": "frozen/persistent/configs/pems03_generalization.json",
+      "sha256": "f069fb0575e2e54d3bd201ee37fb232c84537e9cdaf97eff80110a8919ed9974",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "configs/primary.json",
+      "bundled_path": "frozen/persistent/configs/primary.json",
+      "sha256": "09a01f1b3313d77551dd638d9cd4ec50236c560110ac4eb4f96f78a62178912c",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "configs/robustness.json",
+      "bundled_path": "frozen/persistent/configs/robustness.json",
+      "sha256": "a34df9313516d16b2b40e2eb06b0935a53b01e7bc0abf5990592c43eedb07f10",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "configs/spatial_cluster_fix3.json",
+      "bundled_path": "frozen/persistent/configs/spatial_cluster_fix3.json",
+      "sha256": "70979226b8c5b007473fedb104b3ceaa0a30db8cb3ada468f263975461ca0a5f",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "convert_pems03.py",
+      "bundled_path": "frozen/persistent/convert_pems03.py",
+      "sha256": "9abc3171feeb74707f29235d2b630386ba4fe47af3a1e7c06becfa8310c35baf",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "generate_masks.py",
+      "bundled_path": "frozen/persistent/generate_masks.py",
+      "sha256": "dc2e5e1bfe9c749ba60f5498c8114253e0519e65548669d2b09a51f890359d4a",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "LICENSE",
+      "bundled_path": "frozen/persistent/LICENSE",
+      "sha256": "61779c596ed349dcf7de4df075c2e79ba573011c7f352e7a3bfedcfccdc33d02",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "models.py",
+      "bundled_path": "frozen/persistent/models.py",
+      "sha256": "e73f28893f75d1ff82fad02d2d998c3bf1a3813a39102808edcb4b8cbfa37a58",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "protocol.py",
+      "bundled_path": "frozen/persistent/protocol.py",
+      "sha256": "39ab4ba72edd03f492328096bcd72545c67da918bf994393b787bdd1af78907e",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "requirements.txt",
+      "bundled_path": "frozen/persistent/requirements.txt",
+      "sha256": "1a9369ead14ce2d1b38bda3615132e9fcdf00bd22523a0b064021ae982c30618",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "run.py",
+      "bundled_path": "frozen/persistent/run.py",
+      "sha256": "1bdea34c54322670dd53a63ab35d0b2e31e2771f0e025ef2c6331049b8888a0c",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "run_suite.py",
+      "bundled_path": "frozen/persistent/run_suite.py",
+      "sha256": "37320e22c1dca21575f7ac8ac58fc096ec9c7d90f7e1e22014a0d34858b1e57a",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "tests/test_masks.py",
+      "bundled_path": "frozen/persistent/tests/test_masks.py",
+      "sha256": "394304857bb033db217cf4ac931c29c3919cc555199f2c7294a02092865e5064",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "tests/test_normalization.py",
+      "bundled_path": "frozen/persistent/tests/test_normalization.py",
+      "sha256": "1497405eb4d372ae51d6c23ebe0d1aa80d2dddf6875d4699afd719b46d816181",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "tests/test_revision.py",
+      "bundled_path": "frozen/persistent/tests/test_revision.py",
+      "sha256": "d59e7a9e488f8ae12e251e39f990f3074ad8e6ebd899b96473b70146bc65ac79",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "tests/test_suite.py",
+      "bundled_path": "frozen/persistent/tests/test_suite.py",
+      "sha256": "c2e66e28c4df5c432177f615e9e61bfdc133eb055356a964cdc948881137354a",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "train.py",
+      "bundled_path": "frozen/persistent/train.py",
+      "sha256": "f25cf2e2cf4b0c335d5e58fee5a13ea54c8455dd1b5422357c5065a06557024b",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "vendor/__init__.py",
+      "bundled_path": "frozen/persistent/vendor/__init__.py",
+      "sha256": "073a3585644668a77af09fef9fd26ae83623eff8f874dbc8e75ea09a4da44997",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "vendor/train_fdr_stgnn.py",
+      "bundled_path": "frozen/persistent/vendor/train_fdr_stgnn.py",
+      "sha256": "4dcb18c226f94783a28ad5e791847d99a5bcd2d27f16ef55d913e184f930a3e8",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_persistent_pems03_fix3",
+      "origin_relative_path": "vendor/train_v16b_external.py",
+      "bundled_path": "frozen/persistent/vendor/train_v16b_external.py",
+      "sha256": "e0e9a7ea06d3ca534c2c064bcd1253afe57d76d5defbcbffa29a5442aea60ecc",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "build_package.py",
+      "bundled_path": "frozen/dgcrn_md/build_package.py",
+      "sha256": "c151120e137d815a2226533e59b7b55b020b501d7321cf86d74c4bde4c39ed02",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "compat.py",
+      "bundled_path": "frozen/dgcrn_md/compat.py",
+      "sha256": "467a89f12cf93638b04ed5ba3242b439d45a129bda17c041eeb748f01560df1f",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "expected_data.json",
+      "bundled_path": "frozen/dgcrn_md/expected_data.json",
+      "sha256": "08e9c7730655e4f1dc56cb026fc7ddf7316ca25e5bcd55635548dc2820fa95e2",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "formal_config.json",
+      "bundled_path": "frozen/dgcrn_md/formal_config.json",
+      "sha256": "9a868d95494b9e7139ad623fc2546cdce5edb94ed9d38356d0fcd73cc1c1ab6c",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "formal_dgcrn.py",
+      "bundled_path": "frozen/dgcrn_md/formal_dgcrn.py",
+      "sha256": "3af302ae3fb2ee8ccdd276bff1015f82e4fc1f608a6f407543f09b033bcee726",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "formal_preflight.py",
+      "bundled_path": "frozen/dgcrn_md/formal_preflight.py",
+      "sha256": "94cf799ba884e8506ab272f265c7e8f9f3f38aff616cc19ac6065d5ce2c2c2b8",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "inputs.py",
+      "bundled_path": "frozen/dgcrn_md/inputs.py",
+      "sha256": "f1f5bb78916a7ae66e31604b15bc711f38f1fc91d839958e09688b9d89bd354c",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "models.py",
+      "bundled_path": "frozen/dgcrn_md/models.py",
+      "sha256": "e73f28893f75d1ff82fad02d2d998c3bf1a3813a39102808edcb4b8cbfa37a58",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "package_manifest.json",
+      "bundled_path": "frozen/dgcrn_md/package_manifest.json",
+      "sha256": "04896ba60c8f129c0132bd6cd9d2685f002ef83249a1f571881d0e25490234ec",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "pilot.py",
+      "bundled_path": "frozen/dgcrn_md/pilot.py",
+      "sha256": "5664b8d9827cca0f61e5ebcf685eb47c0d672cfa107e269e0a2840dec870f397",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "protocol.py",
+      "bundled_path": "frozen/dgcrn_md/protocol.py",
+      "sha256": "94d3caa6b35fad1885a20beb01933b8575bc9df25e826a744eaa4117b72a2845",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "run_formal_matrix.py",
+      "bundled_path": "frozen/dgcrn_md/run_formal_matrix.py",
+      "sha256": "3056ee09e4570b773102c02d34e2b371b9d5929efcd3b45c5c177c78ae1aef51",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "run_pilot.py",
+      "bundled_path": "frozen/dgcrn_md/run_pilot.py",
+      "sha256": "004eee180249f69009843e12b2b9297018520f85058890a6406666034154d9a7",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "source_manifest.json",
+      "bundled_path": "frozen/dgcrn_md/source_manifest.json",
+      "sha256": "1c2412e1fe6dd85583e9d080f2311f882f9a8a36f97d8cfb95104282c7e8eec9",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "start_pilot.py",
+      "bundled_path": "frozen/dgcrn_md/start_pilot.py",
+      "sha256": "0c3f4b6d7dd13c800ed6dc5e35da877ee619d7051b7d38d6c2303ccd3ab487c5",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "tests_contract.py",
+      "bundled_path": "frozen/dgcrn_md/tests_contract.py",
+      "sha256": "c2927210e503d4d505578b01d1172563e87b3de9c0898efb0ec8c8e1c2d7afbe",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "vendor/__init__.py",
+      "bundled_path": "frozen/dgcrn_md/vendor/__init__.py",
+      "sha256": "073a3585644668a77af09fef9fd26ae83623eff8f874dbc8e75ea09a4da44997",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "vendor/train_fdr_stgnn.py",
+      "bundled_path": "frozen/dgcrn_md/vendor/train_fdr_stgnn.py",
+      "sha256": "4dcb18c226f94783a28ad5e791847d99a5bcd2d27f16ef55d913e184f930a3e8",
+      "transformation": "none_byte_identical"
+    },
+    {
+      "component": "r1_dgcrn_formal_v3",
+      "origin_relative_path": "vendor/train_v16b_external.py",
+      "bundled_path": "frozen/dgcrn_md/vendor/train_v16b_external.py",
+      "sha256": "e0e9a7ea06d3ca534c2c064bcd1253afe57d76d5defbcbffa29a5442aea60ecc",
+      "transformation": "none_byte_identical"
+    }
+  ],
+  "upstream_dgcrn_distributed": false,
+  "metadata_changes": [
+    "dasdg/__init__.py release version only",
+    "new dasdg/api.py forwards unchanged audited API",
+    "new unified CLI and user-supplied-source DGCRN compatibility builder"
+  ],
+  "custom_dataset_protocol": "complete_labels_float64_training_normalization_not_frozen_PEMS",
+  "frozen_protocol_sources_modified": false,
+  "accepted_candidate_version": "1.1.0rc1"
+}

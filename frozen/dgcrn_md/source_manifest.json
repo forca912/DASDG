@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "purpose": "author_source_preflight_not_paper_results",
+  "repositories": {
+    "gcnm": {
+      "repository": "JingweiZuo/GCN-M",
+      "commit": "2f0d67d11b8a1866d1765fe2233f337fef8c0e34",
+      "files": {
+        "LICENSE": {
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "size": 11357,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/LICENSE?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "README.md": {
+          "sha256": "debabf7ab18a0442c7873f4d50f4643c9714646d4005f6af8fff376bf321b7a9",
+          "git_blob": "63c0b85aecc771cb38efc7c052a4774898a6c292",
+          "size": 1695,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/README.md?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "requirements.txt": {
+          "sha256": "160eddba8deea05909e6ecf6b892d6d912ea55fbd1f5e5f3fd7d656132d21950",
+          "git_blob": "773f55b5882d164cefe559cde05036449abd7223",
+          "size": 101,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/requirements.txt?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "models/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/models/__init__.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "models/gnn.py": {
+          "sha256": "c098d5385942bce1a428dbdcf1745c888bafdd62d739be9510a1c39caf5d34ac",
+          "git_blob": "6d0fe27c557089ff821e39f330bc7aef4caf7894",
+          "size": 7297,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/models/gnn.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "models/memoryModule.py": {
+          "sha256": "6a385d3f7704503369178b0d5a25db0adb71b155d0f09ef8f24cf74969a75af6",
+          "git_blob": "38d4c599dcbdb44ad2f4339961023fe8ceda4702",
+          "size": 7667,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/models/memoryModule.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "models/model.py": {
+          "sha256": "46880502a5a92972a2f593f1c3fa5ce3628b0834d6ed0a0fc8e31a90965b7100",
+          "git_blob": "2803829e9e7142422f9e9cf1901b1824cd147a21",
+          "size": 18625,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/models/model.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "utils/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/utils/__init__.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "utils/masking.py": {
+          "sha256": "33862345a8e9297b4214614e16c86829279953506319da4ffe33a476ef047c28",
+          "git_blob": "7fd479e0dec7bc670549032c7dca7003e87db55d",
+          "size": 851,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/utils/masking.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "utils/metrics.py": {
+          "sha256": "467600de35a41dfcf7c0146f6561715fc67d3109bce02ab6fd989ebd4db8b393",
+          "git_blob": "884b5283b421404de29222f4b60b81ba14181538",
+          "size": 5225,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/utils/metrics.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "utils/tools.py": {
+          "sha256": "084f3ea79915afa51cc017efe540f6243b2c2badac77d32f9b48a19fe9a87e06",
+          "git_blob": "58e050be9b52d6c246b3697d45d5c790274da7a5",
+          "size": 2297,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/utils/tools.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "data/data_loader.py": {
+          "sha256": "8b2dc5f1d5a2b12d1e4641d4155075650d93b0a0b0a7f9560baf61ff17e9e3ce",
+          "git_blob": "1d5103416dfbd14e62b6458aa45b8e82b1bdfb1f",
+          "size": 13924,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/data/data_loader.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "data/gcnm_utils.py": {
+          "sha256": "287386089073f04c0f1487c085c074b799990036f95b544995329c2e88bb8d75",
+          "git_blob": "c65e0546de97dba65cf11db990ac25ce1e6a6aba",
+          "size": 9425,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/data/gcnm_utils.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "data/generate_dated_data.py": {
+          "sha256": "e490f565d972326339169291cad26ed24cb337fb5d4154a82eb9a2aef4146d5f",
+          "git_blob": "27db60566a7ebcc01794fd48ce9b213a7d169bd4",
+          "size": 20992,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/data/generate_dated_data.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "exp/exp_GCNM.py": {
+          "sha256": "ada4d7e1c49fe6f4bda51892d1748be60a6c04982ec704b985d2c85bedc4a1aa",
+          "git_blob": "c914de32d0c9a1cd316da20210239b6f8dee7431",
+          "size": 14315,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/exp/exp_GCNM.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "exp/exp_GCNMbasic.py": {
+          "sha256": "1c3a7848c66cd38d24a6d6106b6935bdaf1c67b22ccd86fe91ec706d53066b93",
+          "git_blob": "e5db27273ca8ba7fa2eea28d1eac66679be45a78",
+          "size": 2786,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/exp/exp_GCNMbasic.py?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        },
+        "configs/METR_LA_GCNM.conf": {
+          "sha256": "5f8372186211a3b1881c9fff3f99b045b75f537bf600a765d918ef3dbf94f127",
+          "git_blob": "8aef3c3b337f1fec6531143efecdb867d8d13153",
+          "size": 816,
+          "url": "https://api.github.com/repos/JingweiZuo/GCN-M/contents/configs/METR_LA_GCNM.conf?ref=2f0d67d11b8a1866d1765fe2233f337fef8c0e34"
+        }
+      }
+    },
+    "dgcrn": {
+      "repository": "tsinghua-fib-lab/Traffic-Benchmark",
+      "commit": "b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228",
+      "files": {
+        "LICENSE": {
+          "sha256": "ecbb0eb738e53d320c6763c2be30bde2d8ee25abbff737053106d1afd56701f7",
+          "git_blob": "0d05992ec1155da8235f2bafbdb4dbbf8bbdfca6",
+          "size": 1085,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/LICENSE?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        },
+        "README.md": {
+          "sha256": "e207d34e38ce157b3319b0f9964640c5f32debb0995f5c6a81af83b11310ae69",
+          "git_blob": "3e0ee8664a1aadf752a3935958b5ebd7cc86f06e",
+          "size": 3041,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/README.md?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        },
+        "methods/DGCRN/net.py": {
+          "sha256": "3cd70828ef5b42cb6134c3575961547f19446a54cbbf00ea150e2e33aa6d1aeb",
+          "git_blob": "d3ba9e796f6d5d5f18cf7cc0b5b392584eaf848e",
+          "size": 10196,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/net.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        },
+        "methods/DGCRN/layer.py": {
+          "sha256": "b0c3f752ed36538bce7a020db26a434f0c22e4dc063b4032f4eb2137cf8f3fe0",
+          "git_blob": "71a93cefa151c75d9b199c24eec2755f73a71721",
+          "size": 2007,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/layer.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        },
+        "methods/DGCRN/train.py": {
+          "sha256": "851bfb0f2ddead7d2d893e3360acf12e0a16b8ecaac26ed7e8703defaf910ead",
+          "git_blob": "c4a4b5b1ecf0f9a6176e3bce65af5c1161b5efd9",
+          "size": 15124,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/train.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        },
+        "methods/DGCRN/trainer.py": {
+          "sha256": "121385549af7294ba821950320fd7bc3732229a5b048f85fdf178cd3c1d83987",
+          "git_blob": "2b7ccad3c6e7cdf4c32fabde5f288d7d55020329",
+          "size": 3313,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/trainer.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        },
+        "methods/DGCRN/util.py": {
+          "sha256": "29bb0d0a240ad8abca861a1f7291afb20455ed14650e539b8ac4b67471575367",
+          "git_blob": "9ecf246c842b2f33b7a1fa4f28be8cac36387c97",
+          "size": 12210,
+          "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/util.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+        }
+      }
+    }
+  }
+}

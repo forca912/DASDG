@@ -1,0 +1,21 @@
+{
+  "title": "DASDG: Traffic-flow forecasting under persistent sensor missingness",
+  "version": "1.1.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Li, Zhuorui",
+      "orcid": "0009-0003-3810-2037",
+      "affiliation": "School of Artificial Intelligence and Robotics, Hunan University of Technology and Business"
+    }
+  ],
+  "description": "DASDG 1.1.0 unifies configurable training, causal prediction, epoch-boundary full-state resume, evidence validation and preserved traffic-study workflows. The training and prediction runtime is byte-identical to the 1.1.0rc1 candidate that passed 20 CPU core checks and 17 unified/GPU checks on an RTX 4090 D. These are synthetic software checks, not real nontraffic performance evidence. Frozen traffic configurations and data contracts are provided; original traffic data, masks, weights and external DGCRN author source are not bundled. The upstream DGCRN LICENSE and README licence labels are inconsistent and remain unclarified; the MIT core provides only its own adapter and pinned-source verification. Previous v1.0.2 materials remain separately identified under archival/.",
+  "keywords": ["traffic-flow forecasting", "persistent missingness", "dynamic graph", "reproducibility", "research software"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/forca912/DASDG", "relation": "isSupplementTo", "scheme": "url"}
+  ],
+  "notes": "Preserve the existing DASDG version series. Do not use the v1.0.2 DOI as the identifier for 1.1.0. External upstream source is excluded from the MIT core."
+}

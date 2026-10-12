@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checks": {
+    "actual_formal_v3_builder_byte_equality": true,
+    "upstream_license_and_README_preserved": true,
+    "existing_compatibility_output_refused": true,
+    "tampered_upstream_refused_before_output": true,
+    "hidden_truth_and_future_input_invariance": {
+      "cutoff_exclusive": 40,
+      "hidden_true_value_invariance": true,
+      "future_value_and_mask_invariance": true,
+      "normalization_statistics_held_fixed_as_training_artifact": true
+    },
+    "real_forward_backward_batch_1": true,
+    "future_target_invariance_batch_1": {
+      "max_abs_difference": 0.0
+    },
+    "real_decoder_identity_mapping_batch_1": {
+      "batch": 1,
+      "nodes": 7,
+      "horizons": 12,
+      "marker_identity_pass": true
+    },
+    "real_forward_backward_batch_2": true,
+    "future_target_invariance_batch_2": {
+      "max_abs_difference": 0.0
+    },
+    "real_decoder_identity_mapping_batch_2": {
+      "batch": 2,
+      "nodes": 7,
+      "horizons": 12,
+      "marker_identity_pass": true
+    },
+    "external_operator_acceptance_complete": true
+  },
+  "scope": "synthetic_CPU_operator_not_benchmark",
+  "software_version_tested": "1.1.0rc1"
+}

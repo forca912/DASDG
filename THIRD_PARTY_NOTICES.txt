@@ -1,0 +1,26 @@
+DASDG 1.1.0 third-party provenance and distribution boundary
+
+DASDG core: MIT License, Copyright (c) 2026 Li Zhuorui; see LICENSE.
+External DGCRN is an adapted baseline, not a native generic API model.
+Repository: https://github.com/tsinghua-fib-lab/Traffic-Benchmark
+Pinned commit: b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228.
+The upstream LICENSE file states MIT, while its README badge states CC BY-NC-SA.
+The rightsholder has not clarified this inconsistency. The DASDG MIT core excludes
+upstream author model source. No relicensing or resolution is asserted.
+tools/acquire_frozen_sources.py is an explicit user-triggered acquisition tool;
+it verifies SHA-256, file size and Git blob identity and preserves source notices.
+It also retrieves GCN-M files required by the preserved compatibility builder.
+This preserved dependency does not establish a formal GCN-M comparison result.
+
+The standalone dasdg dgcrn-prepare command verifies user-supplied DGCRN sources
+and generates an isolated copy with exactly the two formal-v3 adaptations:
+1. Namespace the layer import to pf_dgcrn.layer.
+2. Preserve the encoder batch dimension instead of applying unrestricted squeeze.
+It retains both upstream licensing materials, attribution and a compatibility diff.
+Generated external copies must not be silently added to this MIT distribution.
+Obtain rightsholder clarification before redistributing material with conflicting
+licence notices. Use external sources under their applicable upstream terms.
+
+NumPy, PyTorch and optional pandas are external runtime dependencies and retain
+their respective licences. Original PEMS traffic data and masks are not bundled;
+their provenance and access terms remain separate from the DASDG code licence.

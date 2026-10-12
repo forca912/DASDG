@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Preserve protocol-hashed files byte-for-byte on all checkout platforms.
+* -text

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "software_stage": "local_verified_evidence_tools_not_full_training_release",
+  "tools_version": "0.3.0",
+  "scope_note": "This wheel validates result archives, frozen engine source fingerprints, and (with optional NumPy) the existing input contract. It does not expose a unified training/inference API or arbitrary-dataset registration.",
+  "public_dasdg_version": "1.0.2",
+  "engines": {
+    "persistent": {
+      "datasets": [
+        "PEMS03",
+        "PEMS04",
+        "PEMS08"
+      ],
+      "models": [
+        "dasdg",
+        "gru_duration",
+        "gwn_duration",
+        "gwn_mask",
+        "dasdg_dense",
+        "dasdg_dynamic",
+        "dasdg_no_duration",
+        "dasdg_no_gate",
+        "dasdg_no_graph",
+        "dasdg_static"
+      ],
+      "resume_semantics": "optimizer_scheduler_and_rng_state_restoration_in_preserved_engine",
+      "formal_training_environment": "Python 3.12 / PyTorch 2.3 CUDA 12.1",
+      "new_arbitrary_dataset_registration": "not_implemented",
+      "source_distribution": "not_bundled_by_this_tools_package",
+      "source_archive_name": "dasdg_revision_r1_robustness_fix3_pems03_v1.zip",
+      "source_archive_sha256": "ae607be5537f59ed9de13c7b1c5049a2aba5f254e156e78046f8d7f6971910c0",
+      "source_files_sha256": {
+        "configs/pattern_compare.json": "1266aff80afb9ed45102a7e87ec22c95362a5556b846800c2fa78697ed458399",
+        "configs/pems03_generalization.json": "f069fb0575e2e54d3bd201ee37fb232c84537e9cdaf97eff80110a8919ed9974",
+        "configs/primary.json": "09a01f1b3313d77551dd638d9cd4ec50236c560110ac4eb4f96f78a62178912c",
+        "configs/robustness.json": "a34df9313516d16b2b40e2eb06b0935a53b01e7bc0abf5990592c43eedb07f10",
+        "configs/spatial_cluster_fix3.json": "70979226b8c5b007473fedb104b3ceaa0a30db8cb3ada468f263975461ca0a5f",
+        "vendor/__init__.py": "073a3585644668a77af09fef9fd26ae83623eff8f874dbc8e75ea09a4da44997",
+        "vendor/train_fdr_stgnn.py": "4dcb18c226f94783a28ad5e791847d99a5bcd2d27f16ef55d913e184f930a3e8",
+        "vendor/train_v16b_external.py": "e0e9a7ea06d3ca534c2c064bcd1253afe57d76d5defbcbffa29a5442aea60ecc",
+        "vendor/__pycache__/__init__.cpython-310.pyc": "8155829e9c9dc4244178874324453597e5106bc22e5f429b6d9ac05f5e5de096",
+        "vendor/__pycache__/train_fdr_stgnn.cpython-310.pyc": "7909ff8352b97268b4e690bd595a0ae99109347ddc98bb20eeaf485fd2248762",
+        "vendor/__pycache__/train_v16b_external.cpython-310.pyc": "598915485f2b3dc94afe03237b8e4803e699375b994976f2e4177a3a282c1e3b",
+        "convert_pems03.py": "9abc3171feeb74707f29235d2b630386ba4fe47af3a1e7c06becfa8310c35baf",
+        "generate_masks.py": "dc2e5e1bfe9c749ba60f5498c8114253e0519e65548669d2b09a51f890359d4a",
+        "LICENSE": "61779c596ed349dcf7de4df075c2e79ba573011c7f352e7a3bfedcfccdc33d02",
+        "models.py": "e73f28893f75d1ff82fad02d2d998c3bf1a3813a39102808edcb4b8cbfa37a58",
+        "protocol.py": "39ab4ba72edd03f492328096bcd72545c67da918bf994393b787bdd1af78907e",
+        "README_操作说明.md": "dffe08ae94d82a65582723f568ede5628b71df172c4313318fedc7f06d32b0ea",
+        "README_fix3_补跑空间模式.md": "8623b62b3ea2db384e15c832f865667fc0d912f5ea89bd0b108f6257a2b40ec5",
+        "requirements.txt": "1a9369ead14ce2d1b38bda3615132e9fcdf00bd22523a0b064021ae982c30618",
+        "run_suite.py": "37320e22c1dca21575f7ac8ac58fc096ec9c7d90f7e1e22014a0d34858b1e57a",
+        "run.py": "1bdea34c54322670dd53a63ab35d0b2e31e2771f0e025ef2c6331049b8888a0c",
+        "train.py": "f25cf2e2cf4b0c335d5e58fee5a13ea54c8455dd1b5422357c5065a06557024b"
+      }
+    },
+    "dgcrn-md": {
+      "datasets": [
+        "PEMS04",
+        "PEMS08"
+      ],
+      "models": [
+        "DGCRN-MD-adapted"
+      ],
+      "resume_semantics": "skip_completed_only_no_partial_checkpoint_resume",
+      "formal_training_environment": "Python 3.12 / PyTorch 2.3 CUDA 12.1",
+      "adaptations": [
+        "mask_duration_inputs",
+        "calendar_features_disabled",
+        "training_only_correlation_graph_proxy",
+        "zero_future_auxiliary_at_validation_and_test"
+      ],
+      "license_status": "unresolved_upstream_LICENSE_MIT_README_CC_BY_NC_SA_badge_conflict",
+      "source_distribution": "not_bundled_by_this_tools_package",
+      "source_archive_name": "dgcrn_md_formal_v1_clean_v3.zip",
+      "source_archive_sha256": "04ab79a09381bc317d28d1b3154a8d60240aa32058fab63c7337425bd585dc89",
+      "source_files_sha256": {
+        "vendor/__init__.py": "073a3585644668a77af09fef9fd26ae83623eff8f874dbc8e75ea09a4da44997",
+        "vendor/train_fdr_stgnn.py": "4dcb18c226f94783a28ad5e791847d99a5bcd2d27f16ef55d913e184f930a3e8",
+        "vendor/train_v16b_external.py": "e0e9a7ea06d3ca534c2c064bcd1253afe57d76d5defbcbffa29a5442aea60ecc",
+        "build_package.py": "c151120e137d815a2226533e59b7b55b020b501d7321cf86d74c4bde4c39ed02",
+        "compat.py": "467a89f12cf93638b04ed5ba3242b439d45a129bda17c041eeb748f01560df1f",
+        "expected_data.json": "08e9c7730655e4f1dc56cb026fc7ddf7316ca25e5bcd55635548dc2820fa95e2",
+        "formal_config.json": "9a868d95494b9e7139ad623fc2546cdce5edb94ed9d38356d0fcd73cc1c1ab6c",
+        "formal_dgcrn.py": "3af302ae3fb2ee8ccdd276bff1015f82e4fc1f608a6f407543f09b033bcee726",
+        "formal_preflight.py": "94cf799ba884e8506ab272f265c7e8f9f3f38aff616cc19ac6065d5ce2c2c2b8",
+        "FORMAL_PROTOCOL.md": "0a8f649e66173186884010416e1e009d90022906de1b27af652e10a181e76d37",
+        "inputs.py": "f1f5bb78916a7ae66e31604b15bc711f38f1fc91d839958e09688b9d89bd354c",
+        "LOCAL_VALIDATION.md": "467a5cbe0141e8076e9c22899e21b5f1c18dae8955534da2d63c94fd42080f97",
+        "models.py": "e73f28893f75d1ff82fad02d2d998c3bf1a3813a39102808edcb4b8cbfa37a58",
+        "package_manifest.json": "04896ba60c8f129c0132bd6cd9d2685f002ef83249a1f571881d0e25490234ec",
+        "pilot.py": "5664b8d9827cca0f61e5ebcf685eb47c0d672cfa107e269e0a2840dec870f397",
+        "protocol.py": "94d3caa6b35fad1885a20beb01933b8575bc9df25e826a744eaa4117b72a2845",
+        "README.md": "7032cbed1f523384fca293a6fbc8e6dc36dc824f0f0294033d279933d7c78ff9",
+        "run_formal_matrix.py": "3056ee09e4570b773102c02d34e2b371b9d5929efcd3b45c5c177c78ae1aef51",
+        "run_pilot.py": "004eee180249f69009843e12b2b9297018520f85058890a6406666034154d9a7",
+        "source_manifest.json": "1c2412e1fe6dd85583e9d080f2311f882f9a8a36f97d8cfb95104282c7e8eec9",
+        "start_pilot.py": "0c3f4b6d7dd13c800ed6dc5e35da877ee619d7051b7d38d6c2303ccd3ab487c5",
+        "tests_contract.py": "c2927210e503d4d505578b01d1172563e87b3de9c0898efb0ec8c8e1c2d7afbe"
+      }
+    }
+  }
+}

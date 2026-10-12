@@ -1,0 +1,106 @@
+{
+  "verification_status": "ANALYZED_NOT_INDEPENDENT_GPU_RERUN",
+  "returned_artifact_hashes_verified": 16,
+  "compatibility_rederived_from_pinned_sources": true,
+  "legacy_protocol_matches": [
+    {
+      "dataset": "PEMS04",
+      "seed": 20260808,
+      "legacy_identity": "a874b75217ed8f35acf763f224216e6207b9e405c83864af0149ba61bc0fd032",
+      "legacy_run_config": "D:\\lizhuorui\\论文\\ccf c论文\\r1_existing_results_analysis\\fairness\\runs\\PEMS04\\seed20260808\\dasdg\\run_config.json",
+      "complete_sha256": "1c297547a71243e400581bd2428a2a0f3a8527ce49341c251c8d461268ff8a78",
+      "mask_sha256": "31ed136b78453171662a39682d2d2d76462374feb9a311dd303f4c1b67721e58",
+      "mean": 207.14183044433594,
+      "std": 156.24388122558594,
+      "data_and_mask_match": true
+    },
+    {
+      "dataset": "PEMS04",
+      "seed": 20260809,
+      "legacy_identity": "6f26219773d03596340f7ae5298179138e75c9d936679c1886720f8c7bb01a53",
+      "legacy_run_config": "D:\\lizhuorui\\论文\\ccf c论文\\r1_existing_results_analysis\\fairness\\runs\\PEMS04\\seed20260809\\dasdg\\run_config.json",
+      "complete_sha256": "1c297547a71243e400581bd2428a2a0f3a8527ce49341c251c8d461268ff8a78",
+      "mask_sha256": "2bfe3ccde1f25f0e9bf895a50bf7d6ab717958062ed0a7b112df0da71fbba17f",
+      "mean": 207.14183044433594,
+      "std": 156.24388122558594,
+      "data_and_mask_match": true
+    },
+    {
+      "dataset": "PEMS04",
+      "seed": 20260810,
+      "legacy_identity": "a078f6557b1d9a8f8d2198147f130498664aaf681e598e7a74e820e09e9988ea",
+      "legacy_run_config": "D:\\lizhuorui\\论文\\ccf c论文\\r1_existing_results_analysis\\fairness\\runs\\PEMS04\\seed20260810\\dasdg\\run_config.json",
+      "complete_sha256": "1c297547a71243e400581bd2428a2a0f3a8527ce49341c251c8d461268ff8a78",
+      "mask_sha256": "26257598ec96d77cb6c5da57ce5d60aff974f96d719c92fad397258b3dfa7401",
+      "mean": 207.14183044433594,
+      "std": 156.24388122558594,
+      "data_and_mask_match": true
+    },
+    {
+      "dataset": "PEMS08",
+      "seed": 20260808,
+      "legacy_identity": "bf62e77cd66dd897bcebe20c6be879756b77fd0494927cbfc5817e5ed069cad6",
+      "legacy_run_config": "D:\\lizhuorui\\论文\\ccf c论文\\r1_existing_results_analysis\\fairness\\runs\\PEMS08\\seed20260808\\dasdg\\run_config.json",
+      "complete_sha256": "2ff1d49bc1534d8618641dfdb68888843b4822ef38d5d8286e11f95597cf54d4",
+      "mask_sha256": "70148d37f69432a1df03ae8b6785dc45daf9038fa0484f772b0c36de1ee30f87",
+      "mean": 229.62722778320312,
+      "std": 145.56175231933594,
+      "data_and_mask_match": true
+    },
+    {
+      "dataset": "PEMS08",
+      "seed": 20260809,
+      "legacy_identity": "66eb42f941fb27e65068cdf3856921bf18f57d44ef620b4239c562c86a541041",
+      "legacy_run_config": "D:\\lizhuorui\\论文\\ccf c论文\\r1_existing_results_analysis\\fairness\\runs\\PEMS08\\seed20260809\\dasdg\\run_config.json",
+      "complete_sha256": "2ff1d49bc1534d8618641dfdb68888843b4822ef38d5d8286e11f95597cf54d4",
+      "mask_sha256": "da90635c26e545bb397b21213208e167bd5ba99e5474c1fa2c438d91e9b6c159",
+      "mean": 229.62722778320312,
+      "std": 145.56175231933594,
+      "data_and_mask_match": true
+    },
+    {
+      "dataset": "PEMS08",
+      "seed": 20260810,
+      "legacy_identity": "83737e7509fc589c8522c617b3201ea27b8a930d99656e3ad555b9c306729c7b",
+      "legacy_run_config": "D:\\lizhuorui\\论文\\ccf c论文\\r1_existing_results_analysis\\fairness\\runs\\PEMS08\\seed20260810\\dasdg\\run_config.json",
+      "complete_sha256": "2ff1d49bc1534d8618641dfdb68888843b4822ef38d5d8286e11f95597cf54d4",
+      "mask_sha256": "0ed426f3ade1f316824fdd30cf9a2ed5e48518d1b158fc80fcecfb5697c5126c",
+      "mean": 229.62722778320312,
+      "std": 145.56175231933594,
+      "data_and_mask_match": true
+    }
+  ],
+  "all_six_legacy_masks_match": true,
+  "server_environment": {
+    "python_executable": "/root/miniconda3/bin/python",
+    "python_version": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "platform": "Linux-5.15.0-88-generic-x86_64-with-glibc2.35",
+    "dependencies": {
+      "numpy": {
+        "available": true,
+        "version": "1.26.4"
+      },
+      "pandas": {
+        "available": true,
+        "version": "2.2.3"
+      },
+      "torch": {
+        "available": true,
+        "version": "2.3.0+cu121"
+      }
+    },
+    "cuda_available": true,
+    "torch_cuda_build": "12.1",
+    "gpus": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_bytes": 25393692672
+      }
+    ]
+  },
+  "synthetic_probe_status": "BOTH_PASS",
+  "formal_training_completed": false,
+  "warning": "synthetic losses, small parameter counts and memory are not paper metrics",
+  "next": "real PEMS08 limited pilot; GCN-M historical/spatial contract remains pending"
+}

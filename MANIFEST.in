@@ -1,0 +1,16 @@
+include LICENSE README.md README.txt README_中文.txt CITATION.cff .zenodo.json
+include CHANGELOG.txt THIRD_PARTY_NOTICES.txt SHA256SUMS.txt
+include source_provenance.json release_provenance.json engine_provenance.json
+include .gitattributes .gitignore
+include archival/v1.0.2/.gitattributes
+include run_cpu_acceptance.py run_release_acceptance.py run_server_release_acceptance.sh
+recursive-include src *.py *.json
+recursive-include examples *.py
+recursive-include tools *.py
+recursive-include frozen *.py *.json *.txt LICENSE
+recursive-include archival *.py *.json *.txt *.md *.csv *.yml *.sh *.cff *.toml *.log LICENSE
+recursive-include evidence *.json *.txt
+global-exclude *.py[cod]
+prune build
+prune dist
+prune outputs

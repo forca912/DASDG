@@ -1,16 +1,34 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "dasdg"
-version = "1.0.2"
-description = "Auditable traffic-flow forecasting under persistent sensor missingness"
-requires-python = ">=3.12,<3.13"
-dependencies = ["numpy>=1.26,<3", "torch>=2.3,<2.4"]
+version = "1.1.0"
+description = "DASDG forecasting APIs, preserved benchmark workflows and evidence validation"
+readme = "README.txt"
+license = {file = "LICENSE"}
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy>=1.26,<3", "torch>=2.3,<3"]
+authors = [{name = "Zhuorui Li"}]
+keywords = ["traffic forecasting", "persistent missingness", "dynamic graph", "reproducibility"]
 
-[tool.setuptools]
-package-dir = {"" = "src"}
+[project.optional-dependencies]
+external-dgcrn = ["pandas>=2,<3"]
+
+[project.urls]
+Repository = "https://github.com/forca912/DASDG"
+Issues = "https://github.com/forca912/DASDG/issues"
+"Version history" = "https://doi.org/10.5281/zenodo.22070217"
+
+[project.scripts]
+dasdg = "dasdg.__main__:main"
+dasdg-reuse = "dasdg_reuse.__main__:main"
+dasdg-evidence = "dasdg_revision_tools.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+dasdg = ["dgcrn_sources.json"]
+dasdg_revision_tools = ["engine_registry.json"]

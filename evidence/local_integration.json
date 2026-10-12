@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checks": {
+    "unified_installed_wheel_and_API_identity": true,
+    "unified_console_entrypoint": true,
+    "unified_status_and_scope": {
+      "version": "1.1.0rc1",
+      "publication_status": "candidate_not_published",
+      "api_models": [
+        "dasdg",
+        "gwn_duration",
+        "gru_duration"
+      ],
+      "api_inputs": "finite_complete_training_labels_and_boolean_observation_mask",
+      "api_resume": "epoch_boundary_optimizer_scheduler_RNG_restore",
+      "api_protocol": "custom_reuse_not_frozen_PEMS_benchmark",
+      "frozen_workflows": "source_bundle/frozen; original protocol identities retained",
+      "dgcrn": "external_adapted_baseline_not_native_DASDG_API; upstream_not_bundled",
+      "dgcrn_license": "MIT_file_vs_CC_BY_NC_SA_README_conflict_unresolved",
+      "gpu_acceptance": "requires_actual_execution; not_implied_by_CPU_pass"
+    },
+    "frozen_sources_and_installed_audited_API_unchanged": 64,
+    "integrated_evidence_CLI": true,
+    "archived_entrypoints_import_and_help": true,
+    "documented_example_runs_outside_source_tree": true,
+    "external_source_missing_is_rejected_before_output": true,
+    "external_compatibility_same_as_formal_v3": {
+      "status": "PREPARED",
+      "repository": "tsinghua-fib-lab/Traffic-Benchmark",
+      "commit": "b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228",
+      "checked_files": {
+        "LICENSE": "ecbb0eb738e53d320c6763c2be30bde2d8ee25abbff737053106d1afd56701f7",
+        "README.md": "e207d34e38ce157b3319b0f9964640c5f32debb0995f5c6a81af83b11310ae69",
+        "methods/DGCRN/net.py": "3cd70828ef5b42cb6134c3575961547f19446a54cbbf00ea150e2e33aa6d1aeb",
+        "methods/DGCRN/layer.py": "b0c3f752ed36538bce7a020db26a434f0c22e4dc063b4032f4eb2137cf8f3fe0"
+      },
+      "compatibility_files": [
+        {
+          "source": "methods/DGCRN/net.py",
+          "output": "pf_dgcrn/net.py",
+          "source_sha256": "3cd70828ef5b42cb6134c3575961547f19446a54cbbf00ea150e2e33aa6d1aeb",
+          "target_sha256": "ce23ce7d61054e43b8830dc450d8b0974f9fa1b89745351edd3f8c8be0cffc13"
+        },
+        {
+          "source": "methods/DGCRN/layer.py",
+          "output": "pf_dgcrn/layer.py",
+          "source_sha256": "b0c3f752ed36538bce7a020db26a434f0c22e4dc063b4032f4eb2137cf8f3fe0",
+          "target_sha256": "b0c3f752ed36538bce7a020db26a434f0c22e4dc063b4032f4eb2137cf8f3fe0"
+        }
+      ],
+      "changes": [
+        "namespace import",
+        "preserve encoder batch dimension"
+      ],
+      "same_transform_as_formal_v3": true,
+      "license_status": "CONFLICT_NOT_CLARIFIED_BY_RIGHTSHOLDER",
+      "upstream_modified": false,
+      "formal_training_rerun": false
+    },
+    "integration_acceptance_complete": true
+  },
+  "scope": "synthetic_software_acceptance_not_benchmark",
+  "software_version_tested": "1.1.0rc1"
+}

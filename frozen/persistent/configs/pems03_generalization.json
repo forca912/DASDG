@@ -1,0 +1,38 @@
+{
+  "protocol": "softwarex-r1-pems03-independent-generalization-v1",
+  "datasets": ["PEMS03"],
+  "seeds": [20260808, 20260809, 20260810],
+  "global_missing_rate": 0.1,
+  "affected_node_fraction": 0.4,
+  "block_length": 12,
+  "mask_pattern": "regular",
+  "mask_root": "masks_r1_robustness",
+  "stages": {
+    "robustness": ["dasdg", "gwn_duration"]
+  },
+  "training": {
+    "input_steps": 12,
+    "output_steps": 12,
+    "hidden_dim": 64,
+    "embedding_dim": 16,
+    "graph_dim": 32,
+    "top_k": 20,
+    "dropout": 0.1,
+    "graph_dropout": 0.1,
+    "max_delta_scale": 4.0,
+    "batch_size": 32,
+    "epochs": 150,
+    "patience": 25,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "lr_patience": 8,
+    "lr_factor": 0.5,
+    "min_learning_rate": 0.00001,
+    "improvement_threshold": 0.00001,
+    "gradient_clip": 5.0,
+    "num_workers": 0,
+    "cpu_threads": 4,
+    "latency_warmup": 30,
+    "latency_repetitions": 100
+  }
+}

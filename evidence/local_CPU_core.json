@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checks": {
+    "installed_wheel_import": true,
+    "module_cli_version": "0.1.0rc1",
+    "console_entrypoint": "0.1.0rc1",
+    "custom_dataset_import": true,
+    "short_training": {
+      "epochs": 3,
+      "fixture_only": true
+    },
+    "normalization_uses_training_labels_only": true,
+    "epoch_boundary_interruption": true,
+    "resume_matches_uninterrupted_exactly_cpu": {
+      "epochs": 3,
+      "weights_exact": true
+    },
+    "checkpoint_reload_inference": {
+      "shape": [
+        4,
+        5
+      ],
+      "resume_predictions_exact": true
+    },
+    "unobserved_values_do_not_affect_predictions": true,
+    "cli_prediction_matches_api": true,
+    "reject_nonboolean_mask": {
+      "rejected_as": "ValueError",
+      "message": "observed must be boolean, same shape as values; True means observed"
+    },
+    "reject_incomplete_training_labels": {
+      "rejected_as": "ValueError",
+      "message": "Training/evaluation require complete finite target labels; missing labels are unsupported"
+    },
+    "reject_checkpoint_node_mismatch": {
+      "rejected_as": "ValueError",
+      "message": "History node count mismatch or insufficient input steps"
+    },
+    "reject_resume_changed_config": {
+      "rejected_as": "ValueError",
+      "message": "Resume rejected: data/config/code/environment identity mismatch"
+    },
+    "reject_resume_changed_dataset": {
+      "rejected_as": "ValueError",
+      "message": "Resume rejected: data/config/code/environment identity mismatch"
+    },
+    "reject_output_overwrite": {
+      "rejected_as": "FileExistsError",
+      "message": "Output directory is nonempty; use a new directory or explicit resume"
+    },
+    "reject_concurrent_output_use": {
+      "rejected_as": "RuntimeError",
+      "message": "Another process is using this output directory"
+    },
+    "gwn_duration_same_api_smoke": true,
+    "gru_duration_same_api_smoke": true
+  },
+  "scope": "synthetic_software_acceptance_not_paper_benchmark",
+  "software_version_tested": "1.1.0rc1"
+}

@@ -1,0 +1,48 @@
+{
+  "repository": "tsinghua-fib-lab/Traffic-Benchmark",
+  "commit": "b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228",
+  "files": {
+    "LICENSE": {
+      "sha256": "ecbb0eb738e53d320c6763c2be30bde2d8ee25abbff737053106d1afd56701f7",
+      "git_blob": "0d05992ec1155da8235f2bafbdb4dbbf8bbdfca6",
+      "size": 1085,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/LICENSE?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    },
+    "README.md": {
+      "sha256": "e207d34e38ce157b3319b0f9964640c5f32debb0995f5c6a81af83b11310ae69",
+      "git_blob": "3e0ee8664a1aadf752a3935958b5ebd7cc86f06e",
+      "size": 3041,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/README.md?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    },
+    "methods/DGCRN/net.py": {
+      "sha256": "3cd70828ef5b42cb6134c3575961547f19446a54cbbf00ea150e2e33aa6d1aeb",
+      "git_blob": "d3ba9e796f6d5d5f18cf7cc0b5b392584eaf848e",
+      "size": 10196,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/net.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    },
+    "methods/DGCRN/layer.py": {
+      "sha256": "b0c3f752ed36538bce7a020db26a434f0c22e4dc063b4032f4eb2137cf8f3fe0",
+      "git_blob": "71a93cefa151c75d9b199c24eec2755f73a71721",
+      "size": 2007,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/layer.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    },
+    "methods/DGCRN/train.py": {
+      "sha256": "851bfb0f2ddead7d2d893e3360acf12e0a16b8ecaac26ed7e8703defaf910ead",
+      "git_blob": "c4a4b5b1ecf0f9a6176e3bce65af5c1161b5efd9",
+      "size": 15124,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/train.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    },
+    "methods/DGCRN/trainer.py": {
+      "sha256": "121385549af7294ba821950320fd7bc3732229a5b048f85fdf178cd3c1d83987",
+      "git_blob": "2b7ccad3c6e7cdf4c32fabde5f288d7d55020329",
+      "size": 3313,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/trainer.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    },
+    "methods/DGCRN/util.py": {
+      "sha256": "29bb0d0a240ad8abca861a1f7291afb20455ed14650e539b8ac4b67471575367",
+      "git_blob": "9ecf246c842b2f33b7a1fa4f28be8cac36387c97",
+      "size": 12210,
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/Traffic-Benchmark/contents/methods/DGCRN/util.py?ref=b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228"
+    }
+  }
+}

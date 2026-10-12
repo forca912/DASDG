@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the versioned DASDG software release."
+title: "DASDG: Traffic-flow forecasting under persistent sensor missingness"
+type: software
+authors:
+  - family-names: "Li"
+    given-names: "Zhuorui"
+version: "1.0.2"
+date-released: "2026-08-24"
+license: "MIT"
+doi: "10.5281/zenodo.22070217"
+url: "https://github.com/forca912/DASDG"

@@ -1,141 +1,95 @@
-# DASDG v1.0.2
+# DASDG 1.1.0
 
-DASDG is executable research software for traffic-flow forecasting under
-persistent sensor missingness. The locked manuscript variant is
-`graph_no_reliability_channel`: it combines causal forward filling, an observed
-mask, normalized missing duration, a shared GRU encoder, a Top-k sparse dynamic
-graph, gated graph fusion, and multi-step residual prediction.
+DASDG provides configurable training, causal prediction, epoch-boundary resume,
+and auditable experiment workflows for multivariate forecasting under persistent
+missing observations. The source distribution also preserves the traffic study
+protocols for PEMS03, PEMS04 and PEMS08.
 
-This is the v1.0.2 archival release. It is distributed under the MIT License.
-The public repository is https://github.com/forca912/DASDG. The concept DOI
-covering all archived versions is https://doi.org/10.5281/zenodo.22070217.
+The forecasting design combines forward filling, an observation mask, missing
+duration, a shared recurrent encoder, sparse dynamic graphs and gated residual
+prediction. These are integrated components; the software does not claim that
+elapsed-time representations, recurrent units, Top-k selection or gating were
+individually invented here.
 
-## Verified study scope
+## Install and run an example
 
-- Datasets: PEMS04 and PEMS08.
-- Full frozen matrix: missing rates 5%, 10%, and 15%; block lengths 6, 12, and
-  24; seeds 20260808 through 20260813.
-- Release validation subset: missing rate 10%, block length 12, and seeds
-  20260808, 20260809, and 20260810.
-- Main method: DASDG `graph_no_reliability_channel`, 6 learning runs.
-- External baselines: Graph WaveNet adaptive and GRU-mask-duration, 12 learning
-  runs.
-- Metrics: MAE, RMSE, and WAPE at horizons 3, 6, 9, 12, and all.
-
-The original traffic data and generated masks are not included. Supply them
-under `data/processed` and `data/masks_v2`, or pass another root with
-`--data-root`.
-
-## Environment
-
-The checked environment used Python 3.12.3, PyTorch 2.3.0+cu121, Linux, CUDA,
-and an NVIDIA RTX 4090. The package itself depends only on NumPy and PyTorch.
+Use Python 3.10–3.12 with NumPy >=1.26,<3 and PyTorch >=2.3,<3. In a separate
+environment with compatible PyTorch already installed:
 
 ```bash
-conda env create -f environment.yml
-conda activate dasdg
-python -m pip install -e .
+python -m pip install --no-deps dist/dasdg-1.1.0-py3-none-any.whl
+python examples/minimal_reuse.py --output /absolute/path/new_example --device cpu
+dasdg --version
+dasdg status
 ```
 
-## Quick structural test
+Alternatively install the source tree with `python -m pip install .`. Installation
+does not itself install a GPU driver. See [README.txt](README.txt) for the full API,
+CLI and frozen-workflow instructions, and [中文说明](README_中文.txt) for a Chinese
+overview. A wheel contains the APIs; the source archive contains the additional
+frozen experiment workflows, configurations and examples.
 
-```bash
-PYTHONPATH=src python -m unittest discover -s tests -v
+```python
+from dasdg.api import Config, fit, predict
+
+fit("dataset.npz", "new_run", Config(), device="cuda")
+forecast = predict("new_run/best.pt", values, observed, device="cuda")
 ```
 
-## Preflight
+## Input and recovery contract
 
-The preflight checks both processed datasets, all 108 frozen masks, their
-missing rates, the released source entry points, and the visible CUDA device.
+Training NPZ files contain complete finite `flow[time,node]`, an equally shaped
+boolean `observed` mask (`True` = observed), and chronological integer split
+boundaries `[train_end,val_end,total]`. Missing historical inputs are supported;
+missing training target labels are not. Prediction uses only available history
+and returns `[horizon,node]` in original units.
 
-```bash
-python src/dasdg/preflight_v16b.py \
-  --processed-dir data/processed \
-  --mask-dir data/masks_v2 \
-  --output-json outputs/preflight.json
-```
+Resume restores model, optimizer, scheduler, random state, best weights and
+training history at epoch boundaries. Changed data/configuration/source/runtime
+and concurrent output use are rejected. Custom-data normalization uses complete
+training labels reduced in float64; it is separate from the preserved PEMS
+float32 preprocessing protocol.
 
-## One-command release validation
+## Study reproduction and external baselines
 
-Run the complete 18-run validation from the repository root:
+`frozen/persistent` retains the common R1 comparison, ablation and missingness
+protocols; `frozen/dgcrn_md` retains the formal DGCRN-MD adapter and runner.
+`source_provenance.json` records preserved sources. Original data, generated
+masks and trained weights are not bundled. Supply the audited processed datasets
+and masks described by the configurations and data contracts.
 
-```bash
-bash scripts/run_release_validation.sh
-```
+DGCRN is an adapted external baseline, not a native generic-API model. Its pinned
+upstream is `tsinghua-fib-lab/Traffic-Benchmark` at commit
+`b9f8e40b4df9b58f5ad88432dc070cbbbcdc0228`. Its LICENSE says MIT but its README badge
+says CC BY-NC-SA; this inconsistency has not been clarified by the rightsholder.
+The MIT core does not include its author model source. Separate acquisition,
+hash verification, the two formal compatibility changes and attribution are
+documented in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
-For a server session that must survive SSH or browser disconnection:
+## Verification evidence
 
-```bash
-nohup bash scripts/run_release_validation.sh > release_validation_launcher.log 2>&1 &
-echo $! > release_validation.pid
-```
+The 1.1.0rc1 candidate passed 20 CPU core checks and 17 unified/GPU checks on
+RTX 4090 D, Python 3.12.3, PyTorch 2.3.0+cu121 and NumPy 1.26.4. Returned continuous
+and resumed checkpoints were compared independently, including all saved states.
+GPU prediction and CLI prediction matched exactly in that recorded environment.
 
-Check progress at any time:
+The 1.1.0 training and prediction sources are byte-identical to that accepted
+candidate. Final-version installation checks and the version bridge are recorded
+in `evidence/` and `release_provenance.json`. Synthetic checks demonstrate software
+behavior, not real nontraffic prediction performance or determinism across all
+hardware/software environments. The embedded reuse engine retains its original
+module identifier to preserve checkpoint identity; the distribution is 1.1.0.
 
-```bash
-bash scripts/check_release_progress.sh
-```
+`archival/v1.0.2` contains previous release materials. Its original baseline
+budgets and metric tables are historical, not the R1 fair-input protocol.
 
-Rerunning the validation command uses the same default output directory and
-skips already complete run directories. To preserve a failed attempt separately,
-rename its output directory or set a new `OUTPUT_ROOT` before restarting.
+## Licence and citation
 
-The command executes the preflight, unit tests, six locked DASDG runs, twelve
-external-baseline runs, result auditing, and SHA-256 manifest generation. On
-the checked RTX 4090 setup, the learning runs required about 7.2 hours in total;
-allow 8-10 hours for a clean validation.
+The DASDG core is MIT-licensed; external sources remain governed by their own
+terms. Cite the versioned software using [CITATION.cff](CITATION.cff).
 
-The validation passes only when:
-
-1. the main log ends with `DASDG_REPRODUCTION_COMPLETE learning_rows=6`;
-2. the baseline log ends with `V16B_PRIMARY_RUN_COMPLETE learning_rows=12`;
-3. all 18 condition keys and all 90 horizon rows are present exactly once;
-4. all MAE, RMSE, and WAPE values are finite;
-5. parameter counts match the frozen reference records; and
-6. per-condition metrics remain within the configured 5% relative tolerance.
-
-See `docs/FINAL_REPRODUCTION_PROTOCOL.md` for the full acceptance protocol.
-
-## Direct commands
-
-Main DASDG method:
-
-```bash
-python src/dasdg/run_dasdg_reproduction.py \
-  --data-root data \
-  --datasets PEMS04 PEMS08 \
-  --global-missing-rate 0.1 \
-  --block-length 12 \
-  --seeds 20260808 20260809 20260810 \
-  --output-root outputs/dasdg_repro_v1_0
-```
-
-External baselines:
-
-```bash
-python src/dasdg/run_v16b_primary.py \
-  --data-root data \
-  --models graph_wavenet_adaptive gru_mask_duration \
-  --datasets PEMS04 PEMS08 \
-  --global-missing-rates 0.1 \
-  --blocks 12 \
-  --seeds 20260808 20260809 20260810 \
-  --skip-naive \
-  --output-root outputs/repro_v1_0
-```
-
-## Integrity rules
-
-1. The test split is never used for model or epoch selection.
-2. Existing complete run directories are not overwritten by the orchestrators.
-3. Failed or incomplete validation records are preserved and never promoted to
-   manuscript evidence.
-4. New manuscript numbers must be traceable to saved CSV, JSON, or log files.
-5. A model implementation change requires a new software version and new runs.
-
-## License and citation
-
-The source code is released under the MIT License; see `LICENSE`. Citation
-metadata are provided in `CITATION.cff`. The persistent concept DOI for all
-versions is https://doi.org/10.5281/zenodo.22070217. For exact reproducibility,
-cite the version-specific DOI displayed on the Zenodo record for v1.0.2.
+The existing concept DOI is [10.5281/zenodo.22070217](https://doi.org/10.5281/zenodo.22070217).
+The previous v1.0.2 version DOI is
+[10.5281/zenodo.22074995](https://doi.org/10.5281/zenodo.22074995).
+The new version DOI is assigned separately when 1.1.0 is archived. This source
+tree does not claim that a new DOI has already been issued.
